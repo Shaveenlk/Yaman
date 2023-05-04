@@ -1,0 +1,79 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.first nav {
+    display: flex;
+    justify-content: center;
+    background-color: #102e44;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  
+.first nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.first nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a.active {
+  color: #ffffff;
+  border: 2px solid #2cd9ff;
+ 
+}
+
+.first nav ul li a {
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  line-height: 60px;
+  padding: 0 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.first nav ul li a:hover {
+  color: #ffd700;
+}
+
+.first nav ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.first nav ul li:hover::before {
+  transform: scaleX(1);
+}
+
+/* dropdown for indulge in */
+.first nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #102e44;
+  width: auto;
+  padding: 10px;
+}
+
+.first nav ul li:hover ul {
+  display: block;
+}  

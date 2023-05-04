@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navfix.css"> 
+    <link rel="stylesheet" href="navchange.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+	    <div class="first">
+        <nav>
+            <a href="../home/home.html">
+              <img src="images/logo.png" width="100" height="60" alt="logo" >
+            </a>
+            <ul>
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../Gallery/gallery.html" class="active">Gallery</a></li>
+                <li><a href="../Products/product.html">Products</a></li>
+                <li class="dropdown"><a href="#">Indulge in</a>
+                  <ul>
+                      <li><a href="../Activities/Activities.html">Activities</a></li>
+                      <li><a href="../Transport/Transport.html">Transport</a></li>
+                      <li><a href="../Accommadation/Accommadation.html">Accomodation</a></li>
+                      <li><a href="../Traditional_food/Traditional_Food.html">Traditional Food</a></li>
+                  </ul>
+                </li> 
+                <li><a href="../Quiz/Quiz.html">Quiz</a></li>
+            </ul>
+	      </nav>
+      </div>
+      <br> <br>
+      <div class="second">
+        <nav>
+            <ul>
+              <li><a href="../query/query.html">Query</a></li>
+              <li><a href="../SVG/svg.html">Site map</a></li>
+              <li><a href="../Details/Details.html">About us</a></li>
+            </ul>
+        </nav>
+      </div>
+  </header>  
+    <br> <br>
+    
+    <!-- dropdown for background color  -->
+    <div class="selection">
+        <select id="selectcolorid">
+            <option value="" selected disabled hidden> --Select Background Color--</option>
+            <option value="#FF0000">Red</option>
+            <option value="#FFA500">Orange</option>
+            <option value="#A020F0">Purple</option>
+            <option value="#00BFFF">Blue</option>
+            <option value="#000000">Black</option>
+            <option value="">none</option>
+        </select>
+        <!-- created button for switch color -->
+        <button class="glow-on-hover" onclick="changecolor()">Switch The color</button>
+
+        <!-- created button for random button -->
+        <button class="random">  <span> Random </span> </button>
+       
+        
+        
+        <!-- created font size buttons -->
+        <button class="btn1">A-</button>
+        <button class="btn2">A</button>
+        <button class="btn3">A+</button>
+    </div>
+
+    
+    <br> <br> <br> <br>
+    <div class="container" id="main-container">
+        
+        <div class="left-text">
+            <h1 class="heading">Popular Destinations</h1>
+            <p class="subheading">Sri Lanka is more than just a destination, it's a journey to the soul.</p>
+        </div>
+        <div class="gallery">
+            <div class="box row-2" style="background-image: url(images/mirissa.jpg);" data-description="Mirissa is a gem of the south coast of Sri Lanka. It's located in a small village between Galle and Matara. 600 meters of shoreline, shaped like a crescent and covered in light pinkish sand, round the ocean, where surfers from all over the world come to." onmouseover="delayShowImage(this)">Mirissa </div>
+            <div class="box col-2" style="background-image: url(images/Sigiriya.jpg);" data-description="Sigiriya, also called Lion Rock or Lion Mountain, site in central Sri Lanka consisting of the ruins of an ancient stronghold that was built in the late 5th century CE on a remarkable monolithic rock pillar. " onmouseover="delayShowImage(this)" >Sigiriya</div>
+            <div class="box" style="background-image: url(images/temple.jpg);" data-description="The temple of the Sacred Tooth Relic is built in the city of Kandy near the ancient Royal Palace which is situated to the North of the temple and the forest reserve called “Udawaththa Kelaya” to the East. The Temple of the Sacred Tooth Relic is a world-renowned place of worship, where the left Canine tooth of Gautama Buddha is enshrined." onmouseover="delayShowImage(this)" >Temple Tooth</div>
+            <div class="box row-2" style="background-image: url(images/ambuluwa.jpg);" data-description="Ambuluwawa Tower is located in the suburbs of Gampola Town in Sri Lanka. There has been an increased popularity in recent times especially due to the breathtaking views you can experience when you climb to the top of the Ambuluwawa Tower. It is also known for its narrow spiral staircase which some visitors find challenging to climb." onmouseover="delayShowImage(this)">Ambuluwawa</div>
+            <div class="box col-2" style="background-image: url(images/ninearch.jpg);" data-description="The Nine Arch Bridge, also known as the ‘Bridge in the Sky’ was constructed by connecting two bog mountains when constructing the Badulla – Colombo railway. This bridge is 300 feet in length, 25 feet in width and 80-100 feet in height. It is one of the best examples of colonial-era railway construction in the country. The Bridge can be reached by travelling 2km on Gotuwala road starting from Halpe Textile centre in Badulla Bandarawela road. " onmouseover="delayShowImage(this)">Nine Aarch</div>
+        </div>
+
+    </div>
+    
+    <!-- create image overlay -->
+    <div id="overlay">
+        <div id="full-image-container">
+          <!-- creates  close  button -->
+            <div class="close-button">&#10005;</div>
+            <img id="full-image" alt="full">
+            <p id="full-image-description"></p>
+        </div>
+    </div>
+     <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+
+    <hr> 
+    <footer>
+      <p>Page edited by :<a href="../task/Shaveen.html"> Shaveen De Silva (4) </a> </p>
+      <p>Copywrite &copy; All rights Reserved.</p>
+      <div class="footer-bottom">
+        <p>Last Modified : </p>
+        <p id="time"></p>
+      </div>
+      </footer>
+      <script src="./js/gallery.js"></script>
+    </body>
+</html>

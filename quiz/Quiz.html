@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="Quiz.css">
+    <link rel="stylesheet" href="navfix.css">
+    <link rel="stylesheet" href="navchange.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="shortcut icon" href="photos/title.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="first">
+        <nav>
+                <a href="../home/home.html"><img src="photos/logo.png" width="100px" height="60px" ></a>
+                
+            <ul>
+                <li><a href="../home/home.html" >Home</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li><a href="../Products/product.html">Products</a></li>
+                <li class="dropdown"><a href="#">Indulge in</a>
+                    <ul>
+                        <li><a href="../Activities/Activities.html">Activities</a></li>
+                        <li><a href="../Transport/Transport.html">Transport</a></li>
+                        <li><a href="../Accommadation/Accommadation.html">Accommodation</a></li>
+                        <li><a href="../Traditional_food/Traditional_Food.html">Traditional Food</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Quiz/Quiz.html" class="active">Quiz</a></li>
+            </ul>
+        </nav>
+        </div>
+        <br><br><br>
+        <div class="second">
+        <nav>
+            <ul>
+              <li><a href="../query/query.html">Query</a></li>
+              <li><a href="../SVG/svg.html">Site map</a></li>
+              <li><a href="../Details/Details.html">About us</a></li>
+            </ul>
+            
+        </nav>
+    </div>
+
+
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You have <span>10 questions</span> in this quiz.</div>
+            <div class="info">2. You will have only <span>6 seconds</span> per each question.</div>
+            <div class="info">3. Once you select your answer you can't change the answer.</div>
+            <div class="info">4. You can't exit the quiz while you are answering.</div>
+            <div class="info">5. You will get points on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Yaman - යමං Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">6</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que"></div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text"></div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+<!-- page footer -->
+<div class="foot">
+    <p>Page edited by : <a href="../task/Havindu.html">Havindu Perera (3)</a> </p>
+    <p>Copywrite &copy; All rights Reserved.</p>
+    <div class="footer-bottom">
+        <p>Last Modified : </p>
+        <p id="time"></p>
+    </div>
+    
+    <script>
+        let text = document.lastModified;
+        document.getElementById("time").innerHTML = text;
+    </script>
+</div>
+</html>

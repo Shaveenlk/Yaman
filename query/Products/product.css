@@ -1,0 +1,297 @@
+/* Margins and paddings and use border box for box sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+/* Set the background colour for the body. */
+body{
+    background-color: black;
+}
+
+/* Main container */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 80px;
+    width: 70%;
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+/* Cart selection */
+.cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: goldenrod;
+}
+/* Cart item count */
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: goldenrod;
+    color: white;
+}
+/* Main container for the product list and sidebar */
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+/* Product  */
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+/* Sidebar */
+.sidebar{
+    width: 40%;
+    border-radius: 5px;
+    background-color: #eee;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+/* Sidebar header */
+.head{
+    background-color: goldenrod;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 1px 20px green;
+}
+.img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+p{
+    color: white;
+}
+h2{
+    font-size: 20px;
+    color: red;
+}
+button{
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+button:hover{
+    background-color: #333;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+
+/* Form container */
+#order-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  /* Form fieldset */
+  #order-details fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Form legend */
+  #order-details legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form input label */
+  #order-details label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Form input fields */
+  #order-details input,
+  #order-details select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Form input fields when focused */
+  #order-details input:focus,
+  #order-details select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Form submit button */
+  #place-order-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  /* Form submit button hover effect */
+  #place-order-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Form input group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  /* Form input group with double inputs */
+  .form-group.double {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  /* Form input group with single input */
+  .form-group.single {
+    display: flex;
+    flex-direction: column;
+  }
+  /* CSS code for zoom in effect */
+.images {
+    transition: transform 0.3s ease;
+  }
+  .images:hover {
+    transform: scale(1.1);
+  }
+  
+footer{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 10px;
+  background-color: darkcyan;
+  color: black;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: fixed; 
+}
+
+.footer-bottom{
+  display: inline-block;
+}
+
+.footer-bottom p{
+  display: inline;
+  margin: 0 ;
+}  
+  

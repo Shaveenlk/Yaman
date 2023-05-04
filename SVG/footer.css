@@ -1,0 +1,20 @@
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color: darkcyan;
+    color: black;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-bottom{
+    display: inline-block;
+}
+
+.footer-bottom p{
+    display: inline;
+    margin: 0 ;
+}
+        

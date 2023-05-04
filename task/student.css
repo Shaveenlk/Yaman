@@ -1,0 +1,84 @@
+body{
+    background-image: url(photos/wordpress-background-image.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    left: 43%;
+    width: 175px;
+    height: 150px;
+}
+
+.details{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    width: 800px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(231, 233, 234);
+    color: floralwhite;
+    border-radius: 20px;
+    backdrop-filter: 10px;
+    background-color: rgba(116, 38, 38, 0.94);
+}
+
+.details .link{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 30px;
+}
+
+.details .link button{
+    margin: 0 5px;
+    height: auto;
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.details .link button:hover{
+    color: blue;
+}
+
+.details .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+    /* border-top: 1px solid rgb(9, 5, 241); */
+}
+
+.details .buttons button{
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    transition: all 0.3s ease;
+}
+
+.details .buttons button:hover{
+    color: blue;
+}

@@ -1,0 +1,60 @@
+body {
+    background-image: url("photos/beach.jpg");  /*sets the background image of the body*/
+    background-size: cover;/*resizes the background image to cover the entire body*/
+    background-position: center;
+    color: linear-gradient(red,orange,green,yellow);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7.5em;
+    margin-top: 10%;
+}
+
+.names {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.names span {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #3c3c3c;
+    background-color: #f27de5;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.names span:nth-child(1) {
+    background-color: #f44242;
+}
+
+.names span:nth-child(2) {
+    background-color: #f4a541;
+}
+
+.names span:nth-child(3) {
+    background-color: #3cf441;
+}
+
+.names span:nth-child(4) {
+    background-color: #da46cb;
+}
+h1 {
+    text-align: center;
+    font-size: 7em;
+    margin-top: 10%;
+    color: rgb(204, 252, 254);
+    text-shadow: 2px 2px 1px black;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}

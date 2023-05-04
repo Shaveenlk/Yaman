@@ -1,0 +1,115 @@
+<!Doctype html>
+<head>
+    <title>Query</title>
+    <link rel="stylesheet" href="navfix.css">
+    <link rel="stylesheet" href="navchange.css">
+    <link rel="shortcut icon" href="images/title.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="query.css">
+</head>
+<body>
+    <div class="first">
+        <nav>
+                <a href="../home/home.html"><img src="images/logo.png" width="100px" height="60px" ></a>
+                
+            <ul>
+                <li><a href="../home/home.html" >Home</a></li>
+                <li><a href="../Gallery/gallery.html">Gallery</a></li>
+                <li><a href="../Products/product.html">Products</a></li>
+                <li class="dropdown"><a href="#">Indulge in</a>
+                  <ul>
+                      <li><a href="../Activities/Activities.html">Activities</a></li>
+                      <li><a href="../Transport/Transport.html">Transport</a></li>
+                      <li><a href="../Accommadation/Accommadation.html">Accommodations</a></li>
+                      <li><a href="../Traditional_food/Traditional_Food.html">Traditional Food</a></li>
+                  </ul>
+                </li>
+                <li><a href="../Quiz/Quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        </div>
+        <br><br><br>
+        <div class="second">
+        <nav>
+            <ul>
+              <li><a href="../query/query.html" class="active">Query</a></li>
+              <li><a href="../SVG/svg.html">Site map</a></li>
+              <li><a href="../Details/Details.html">About us</a></li>
+            </ul>
+            
+        </nav>
+        </div>
+        <br>
+        <div class="c-container">
+            <form name="form1" method="post" action="mailto:thisun.20220306@iit.ac.lk">
+              <h2>Comments</h2>
+              <label for="name">Enter your name:</label>
+              <input type="text" id="name" name="name" required placeholder="Ann Melissa">
+              <label for="email">Enter your email:</label>
+              <input type="email" id="email" name="email" required placeholder="example@email.com">
+              <label for="rating">Please rate our website:</label>
+              <div>
+                <input type="radio" id="rating1" name="rating" value="1">
+                <label for="rating1"><span>1</span></label>
+                
+                <input type="radio" id="rating2" name="rating" value="2">
+                <label for="rating2"><span>2</span></label>
+                
+                <input type="radio" id="rating3" name="rating" value="3">
+                <label for="rating3"><span>3</span></label>
+                
+                <input type="radio" id="rating4" name="rating" value="4">
+                <label for="rating4"><span>4</span></label>
+                
+                <input type="radio" id="rating5" name="rating" value="5">
+                <label for="rating5"><span>5</span></label>
+              </div>
+                  <label for= "feedback">Please could you state the reason for giving us this rate?</label> 
+                  <textarea name="feedback" id="feedback" placeholder="add your feedback here...." rows="5" cols="60">
+                  </textarea>
+                        <label for="task">How did you want to complete this task today?</label>
+                        <select id="task" name="task">
+                          <option value="phone">--Please select--</option>
+                          <option value="phone">Phone</option>
+                          <option value="website">Website</option>
+                          <option value="webchat">Webchat</option>
+                          <option value="socialmedia">Social media</option>
+                          <option value="email">Email</option>
+                        </select>
+                        <input type="submit" value="Submit" onclick="openpopup()">
+                      </form>
+
+                <div class="popup" id="popup">
+                  <img src="images/tick.png" >
+                  <h2>Thank you </h2>
+                  <p>Your details has been successfully submitted.Thanks!</p>
+                  <button type="button" onclick="closepopup()">Ok</button>
+                </div>
+        </div>
+        <script>
+          let popup = document.getElementById("popup");
+
+          function openpopup(){
+            popup.classList.add("open-popup");
+          }
+
+          function closepopup(){
+            popup.classList.remove("open-popup");
+          }
+
+        </script>
+
+          <footer>
+            <p>Page edited by : <a href="../task/Thisun.html">Thisun Gunathilaka (2)</a> </p>
+            <p>Copywrite &copy; All rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>Last Modified : </p>
+                <p id="time"></p>
+            </div>
+            
+            <script>
+                let text = document.lastModified;
+                 document.getElementById("time").innerHTML = text;
+            </script>
+        </footer>    
+</body>
+</html>
